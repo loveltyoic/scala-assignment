@@ -4,7 +4,7 @@
 		module="progfun-example_2.10"
 		revision="1.0.0"
 		status="integration"
-		publication="20150413093433"
+		publication="20150426172004"
 	>
 		<description>
 		progfun-example
@@ -26,7 +26,9 @@
 	</configurations>
 	<publications>
 		<artifact name="progfun-example_2.10" type="pom" ext="pom" conf="pom"/>
-		<artifact name="progfun-example_2.10" type="jar" ext="jar" conf="optional" e:classifier="download"/>
+		<artifact name="progfun-example_2.10" type="jar" ext="jar" conf="compile"/>
+		<artifact name="progfun-example_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="progfun-example_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="compile->default(compile)"/>

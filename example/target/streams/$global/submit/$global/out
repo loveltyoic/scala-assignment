@@ -1,11 +1,37 @@
 [0m[[0minfo[0m] [0mConnecting to coursera. Obtaining challenge...[0m
 [0m[[0minfo[0m] [0mComputing challenge response...[0m
 [0m[[0minfo[0m] [0mSubmitting solution...[0m
-[0m[[32msuccess[0m] [0m[0m
-[0m[[32msuccess[0m] [0m Your code was successfully submitted: Your submission has been accepted and will be graded shortly.[0m
-[0m[[32msuccess[0m] [0m NOTE:[0m
-[0m[[32msuccess[0m] [0m   - The final grade is calculated based on the score you get for this assignment[0m
-[0m[[32msuccess[0m] [0m     and the number of days that this submission is after the soft deadline. If your[0m
-[0m[[32msuccess[0m] [0m     final score does not match please make sure to check the exact deadlines.[0m
-[0m[[32msuccess[0m] [0m   - For each assignment there is a limit on the maximum number of attempts you can make.[0m
-[0m[[32msuccess[0m] [0m          [0m
+[0m[[31merror[0m] [0mException: We could not verify your username / password, please try again. (Note that your password is case-sensitive.)[0m
+[0m[[33mwarn[0m] [0mNOTE:[0m
+[0m[[33mwarn[0m] [0m   - Make sure that you have the freshly downloaded assignment from the[0m
+[0m[[33mwarn[0m] [0m     correct course.[0m
+[0m[[33mwarn[0m] [0m   - Make sure that your email is correct and that you have copied the[0m
+[0m[[33mwarn[0m] [0m     password correctly from the assignments page.[0m
+java.lang.RuntimeException: Submission failed
+	at scala.sys.package$.error(package.scala:27)
+	at ProgFunBuild$.failSubmit(ProgFunBuild.scala:193)
+	at ProgFunBuild$.submitSources(ProgFunBuild.scala:178)
+	at ProgFunBuild$$anonfun$submitSetting$1$$anonfun$apply$1.apply(ProgFunBuild.scala:139)
+	at ProgFunBuild$$anonfun$submitSetting$1$$anonfun$apply$1.apply(ProgFunBuild.scala:118)
+	at sbt.Scoped$$anonfun$hf7$1.apply(Structure.scala:583)
+	at sbt.Scoped$$anonfun$hf7$1.apply(Structure.scala:583)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41)
+	at sbt.std.Transform$$anon$5.work(System.scala:71)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:238)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(assignment/*:[31msubmit[0m) Submission failed[0m

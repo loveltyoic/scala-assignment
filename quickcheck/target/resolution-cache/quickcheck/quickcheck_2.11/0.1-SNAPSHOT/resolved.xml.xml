@@ -4,7 +4,7 @@
 		module="quickcheck_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150423102654"
+		publication="20150423173342"
 	>
 		<description>
 		quickcheck
@@ -27,7 +27,9 @@
 	</configurations>
 	<publications>
 		<artifact name="quickcheck_2.11" type="pom" ext="pom" conf="pom"/>
-		<artifact name="quickcheck_2.11" type="jar" ext="jar" conf="optional" e:classifier="download"/>
+		<artifact name="quickcheck_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="quickcheck_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="quickcheck_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.5" conf="scala-tool->default,optional(default)"/>
